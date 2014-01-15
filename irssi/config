@@ -1,0 +1,75 @@
+settings = {
+  core = {
+    real_name = "rickard";
+    user_name = "rickard";
+    nick = "rickard2";
+    timestamp_format = "%H:%M:%S";
+    recode_out_default_charset = "utf-8";
+    recode = "yes";
+    resolve_prefer_ipv6 = "no";
+    log_timestamp = "%H:%M:%S";
+  };
+  "fe-common/core" = {
+    theme = "swift";
+    completion_char = ",";
+    autocreate_windows = "yes";
+    autocreate_own_query = "no";
+    use_msgs_window = "yes";
+    bell_beeps = "yes";
+    autolog = "yes";
+  };
+  "irc/core" = {
+    ctcp_version_reply = "PuTTY - A free telnet and SSH Client for Windows and Unix platforms.";
+  };
+  "fe-text" = { actlist_sort = "refnum"; };
+};
+aliases = {
+  c = "clear ";
+  auth = "msg q@cserve.quakenet.org auth exz";
+  wc = "/window close ";
+  q = "query";
+  w = "whois $0 $0";
+  t = "topic ";
+  p = "part";
+  m = "msg";
+  slap = "me slaps $0 around a bit with a large trout";
+};
+ignores = (
+  { level = "JOINS PARTS QUITS KICKS MODES NICKS"; },
+  { mask = "antandjak"; level = "ALL"; }
+);
+statusbar = {
+  default = {
+    window = {
+      items = {
+        barstart = { priority = "100"; };
+        time = { };
+        user = { };
+        window = { };
+        window_empty = { };
+        lag = { priority = "-1"; };
+        usercount = { };
+        act = { priority = "10"; };
+        more = { priority = "-1"; alignment = "right"; };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+  };
+};
+keyboard = (
+  { key = "meta-p"; id = "change_window"; data = "20"; },
+  { key = "meta-s"; id = "change_window"; data = "22"; },
+  { key = "meta-d"; id = "change_window"; data = "23"; },
+  { key = "meta-f"; id = "change_window"; data = "24"; },
+  { key = "meta-g"; id = "change_window"; data = "25"; },
+  { key = "meta-h"; id = "change_window"; data = "26"; },
+  { key = "meta-j"; id = "change_window"; data = "27"; },
+  { key = "meta-k"; id = "change_window"; data = "28"; },
+  { key = "meta-l"; id = "change_window"; data = "29"; },
+  { key = "meta-ö"; id = "change_window"; data = "30"; },
+  { key = "^C"; id = "command"; data = "wc "; },
+  { key = "^1"; id = "change_window"; data = "1"; },
+  { key = "^2"; id = "change_window"; data = "2"; }
+);
+logs = { };
+hilights = ( { text = "@rickard2"; nick = "yes"; word = "yes"; } );
