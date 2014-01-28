@@ -145,7 +145,7 @@ bar {
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 
-exec chromium-browser
+exec firefox
 exec terminator -x tmux
 exec thunderbird
 exec keepassx
