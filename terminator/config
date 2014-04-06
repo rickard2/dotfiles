@@ -5,7 +5,7 @@
   title_transmit_bg_color = "#d30102"
   focus = system
   use_system_font = False
-  font = Mono 12
+  font = Mono 10
   borderless = True
 
 [keybindings]
